@@ -3,4 +3,44 @@
 /* lesson styles */
 
 /* .container {
+  display: grid;
+  display: inline-grid;
+  grid-template-columns: 100px 200px 400px;
+  grid-template-rows: 200px 150px 100px;
+  column-gap: 50px;
+  row-gap: 50px;
+  gap: 50px;
+  gap: 50px 100px;
 } */
+
+/* явні і неявні сітки */
+/* .container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 250px 100px;
+  grid-auto-rows: 400px;
+} */
+
+/* властивість grid-auto-flow */
+
+/* .container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 100px 200px;
+  grid-auto-flow: column;
+} */
+
+/* розміри */
+
+.container {
+  display: grid;
+  border: 10px solid #000;
+  /* grid-template-columns: 100px 100px 200px 150px; 
+  */
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: 150px 1fr 2fr 1fr; */
+  grid-template-columns: 150px auto 2fr 1fr;
+  gap: 25px;
+}
